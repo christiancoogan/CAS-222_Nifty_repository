@@ -1,0 +1,288 @@
+html,body{
+    background-image: url(../images/nifty-map_test.png);
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+#mobile_view {
+    display:none;
+}
+#wrapper {
+    width:100%;
+    margin: 0 auto 0 auto;    
+}
+
+#main_content_wrapper {
+    width:90%;
+    margin:auto;
+    display:inline-block;
+}
+#main_content_left {
+    color:#482D3C;
+    width:40%;
+    float:left;
+    padding:10px;
+    margin-left:40px;
+}
+#main_content_left h1 {
+    text-align: center;
+}
+#slideshow {
+    padding:5px;
+}
+#slideshow img {
+    display:block;
+    margin:auto;
+    width:100%;
+    background-color:#482D3C;
+}
+#slideshow_wrapper {
+    width:50%;
+    margin:10px 10px 0px 0px;
+    float:right;
+    background-color:#482D3C;
+    padding:2px;
+    border:2px solid #AEA600;
+    border-radius: 15px;
+    box-shadow: 8px 8px 5px darkgrey;
+}
+#content_left {
+    float:left;
+    width:47.434%;
+    margin: 3px 0px 0px 3px;
+    padding:5px;
+}
+#content_right {
+    float:right;
+    width:47.434%;
+    margin:3px 3px 0px 0px; 
+    padding:5px;
+}
+#content_main {
+    display:inline-block;
+    background-color:#745577;
+    color: #DDC4D2;
+    margin-top:15px;
+    border-top:3px solid #AEA600;
+    border-left:2px solid #482D3C;
+    border-right:2px solid #482D3C;
+}
+#content_main h1, h2 {
+    text-align: center;
+}
+#content_wrapper {
+    display:inline-block;
+    margin:0px;
+    padding:10px;
+}
+#footer {
+    background-color:#482D3C;
+    padding:15px;
+}
+#header {
+    width:90%;
+    margin:auto;
+}
+#header_nav {
+    float:left;
+    width:40%;
+    margin:80px auto;
+    margin-left:40px;
+}
+#header_logo {
+    float:left;
+    width:17%;
+    margin:auto;
+}
+#header_contact {
+    width:30%;
+    margin:80px auto;
+    overflow: hidden;
+    border-bottom:2px solid #000000;
+    border-top:2px solid #000000;
+    float:left;
+}
+#header_contact a {
+    float: left;
+    display: block;
+    color: #482D3C
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: bold
+}
+.social_media {
+    width:15%;
+    height:auto;
+    display:block;
+    margin:auto;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    cursor: pointer;
+    font-size: 15px;    
+    border: none;
+    outline: none;
+    color: #482D3C;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-weight: bold;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-image: url(../images/nifty-map_test.png);
+    min-width: 120px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    border:2px solid #000;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    z-index: 1;
+    margin-top:2px;
+}
+
+.dropdown-content a:hover {
+    text-decoration: underline;
+}
+
+.dropbtn:hover {
+    text-decoration: underline;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    border-left:1px solid;
+    border-bottom-left-radius: 15px;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.show {
+    display: block;
+}
+
+
+/* Add a black background color to the top navigation */
+.topnav {
+    width:550px;
+    margin:auto;
+    overflow: hidden;
+    border-bottom:2px solid #000000;
+    border-top:2px solid #000000;
+}
+
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    display: block;
+    color: #482D3C
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: bold
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    text-decoration: underline;
+    color: black;
+}
+.topnav a:visited, a:link {
+    color:#482D3C;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+    display: none;
+}
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 1025px) {
+    .topnav a:not(:first-child) {
+        display: none;
+    }
+    .dropdown {
+        
+    }
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+    .topnav {
+        width:auto;
+        float:none;
+    }
+    #navigation {
+        width:auto;
+    }
+    #header_logo img {
+        display:none;
+    }
+    #header_nav {
+        width:100%;
+        margin:0px auto;
+    }
+    .topnav.responsive {
+        position: relative;
+    }
+    .topnav.responsive a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+    
+    #main_content_left {
+        width:100%;
+        float:none;
+        margin-left:0px;
+    }
+    #slideshow_wrapper {
+        width:90%;
+        margin: auto;
+        float:none;
+    }
+    #content_main {
+        width:auto;
+    }
+    #content_left {
+        width:100%;
+        float:none;
+    }
+    #content_right {
+        width:100%;
+        float:none;
+    }
+    #header_nav {
+
+        float:none;
+    }
+    #header_contact {
+        display:none;
+    }
+    #mobile_view {
+        display: none;
+    }
+    
+}
