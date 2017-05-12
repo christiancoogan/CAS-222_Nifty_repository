@@ -11,6 +11,20 @@ main{
     margin:auto;
     display:inline-block;
 }
+footer {
+    background-color:#482D3C;
+    padding:15px;
+}
+header {
+    width:90%;
+    margin:auto;
+}
+nav {
+    float:left;
+    width:40%;
+    margin:80px auto;
+    margin-left:40px;
+}
 #main_content_left {
     color:#482D3C;
     width:40%;
@@ -68,20 +82,6 @@ main{
     display:inline-block;
     margin:0px;
     padding:10px;
-}
-footer {
-    background-color:#482D3C;
-    padding:15px;
-}
-header {
-    width:90%;
-    margin:auto;
-}
-nav {
-    float:left;
-    width:40%;
-    margin:80px auto;
-    margin-left:40px;
 }
 #header_logo {
     float:left;
