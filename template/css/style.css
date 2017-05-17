@@ -232,7 +232,7 @@ footer {
     }
     
     header {
-        width:70%;
+        width:90%;
         margin:auto;
     }
 
@@ -368,7 +368,7 @@ footer {
     }
 
     .topnav {
-        width:550px;
+        width:50%;
         margin:80px auto;
         overflow: hidden;
         border-bottom:2px solid #000000;
