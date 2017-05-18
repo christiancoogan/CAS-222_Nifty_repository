@@ -1,11 +1,20 @@
 /* General CSS */
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
 body{
-        background-image: url(../images/nifty-map_test.png);
+        background-image: url(../images/nifty-map_test.png);    
     }
 main{
     width:90%;
     margin:auto;
     display:block;
+    overflow:hidden
 }
 footer {
     background-color:#482D3C;
@@ -32,16 +41,18 @@ footer {
     border-top:3px solid #AEA600;
     border-left:2px solid #482D3C;
     border-right:2px solid #482D3C;
+    width:100%;
 }
 #secondary_content h1, h2 {
     text-align: center;
     font-size:1.5em;
     font-weight: bold;
-    padding:10px;
+    padding:15px;
 }
 #content_wrapper {
+    width:95%;
     display:inline-block;
-    margin:0px;
+    margin:auto;
     padding:10px;
 }
 .topnav a {
@@ -54,8 +65,33 @@ footer {
     font-size: 17px;
     font-weight: bold
 }
+#about p {
+	margin-bottom: 12px;
+    text-align: center;
+}
+#about hr {
+	width: 200px;
+	height:2px;
+	border-width:0;
+	color:gray;
+	background-color:gray;
+	margin-top: 20px;
+	margin-right: auto;
+	margin-bottom: 20px;
+	margin-left: auto;
+	padding-right: 50px;
+}
+#about li {
+	list-style-image: url(../images/compass-bullet.png);
+    margin 10px 0px 140px 0px;
+}
 /* Mobile CSS */
 @media only screen and (max-width: 480px) {
+    #about p, hr, li, ul {
+        width:auto;
+        margin:0px;
+        padding:0px;
+    }
     .topnav a:not(:first-child) {
      display: none;
     }
@@ -109,15 +145,19 @@ footer {
         float:none;   
     }
     #secondary_content {
-        width:auto;
+        width:100%;
     }
     #content_left {
-        width:100%;
         float:none;
     }
-    #content_right {
-        width:100%;
+    #content_left p {
+        text-align: center;
+    }
+    #content_right { 
         float:none;
+    }
+    #content_right p {
+        text-align: center;
     }
     #header_contact {
         display:none;
@@ -133,6 +173,11 @@ footer {
 }
 /* Tablet CSS */
 @media only screen and (min-width: 481px) and (max-width: 1024px) {
+    #about p, hr, li, ul {
+        width:auto;
+        margin:0px;
+        padding:0px;
+    }
     .topnav a:not(:first-child) {
         display: none;
     }
@@ -186,14 +231,12 @@ footer {
         float:none;
     }
     #secondary_content {
-        width:auto;
+        width:100%;
     }
     #content_left {
-        width:100%;
         float:none;
     }
     #content_right {
-        width:100%;
         float:none;
     }
     #header_contact {
@@ -225,6 +268,11 @@ footer {
 }
 /* Desktop CSS */
 @media only screen and (min-width: 1025px) {
+    body {
+        overflow-x: hidden;
+        margin: 0px;
+        padding: 0px;
+    }
     main{
         width:90%;
         margin:auto;
@@ -282,11 +330,31 @@ footer {
     #content_right {
         float:right;
         width:47.434%;
-        margin:3px 3px 0px 0px; 
+        margin:3px 0px 0px 0px; 
         padding:5px;
         font-size: 1.2em;
     }
-
+    #content_right label {
+        display: inline-block;
+        width:175px;
+        margin:0px 30px 20px 0px;
+    }
+    input[name=year] {
+        width:30px;
+        text-align: center;
+    }
+    input[type=submit] {
+        display:block;
+        margin:auto;
+    }
+    #content_right form {
+        margin-left:30px;
+    }
+    #content_left p {
+        text-align: center;
+        font-size: 1em;
+    }
+    
     #header_contact {
         width:30%;
         margin:80px auto;
