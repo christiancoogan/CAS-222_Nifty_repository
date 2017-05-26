@@ -57,93 +57,97 @@
     <div id="secondary_content">
         <div id="content_wrapper">
             <div id="content_left">
-                <h1>NIFTY TOURS</h1>
-                <p>
-                    12000 Southwest 49th Avenue<br>
-                    Portland, Oregon 97219<br><br>
-                    (503) 555-1212<br><br>
-                    <img src="images/nifty-contact.png">
-                </p>
+                <div id="content_left_contact">
+                    <h1>NIFTY TOURS</h1>
+                    <p>
+                        12000 Southwest 49th Avenue<br>
+                        Portland, Oregon 97219<br><br>
+                        (503) 555-1212<br><br>
+                        <img src="images/nifty-contact.png">
+                    </p>
+                </div>
             </div>
             <div id="content_right">
                 <h1>PLEASE USE THIS CONVENIENT FORM</h1>
-                <form action="result.php" method="post">
-                    
-                    <label for="name">Your name</label>
-                    <input type="text" name="name" id="name" required><br>
-                    
-                    <label for="email">Your Email</label>
-                    <input type="text" name="email" size="20" required><br>
-                    
-                    <label for="date">Around what date do you want to take the trip? </label>
-                    <select name="month">
-                        <option> - Month - </option>
-                        <option value="January">January</option>
-                        <option value="Febuary">Febuary</option>
-                        <option value="March">March</option>
-                        <option value="April">April</option>
-                        <option value="May">May</option>
-                        <option value="June">June</option>
-                        <option value="July">July</option>
-                        <option value="August">August</option>
-                        <option value="September">September</option>
-                        <option value="October">October</option>
-                        <option value="November">November</option>
-                        <option value="December">December</option>
-                    </select>
-                    <select name="day">
-                    <option> - Day - </option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    <option value="6">6</option>
-                    <option value="7">7</option>
-                    <option value="8">8</option>
-                    <option value="9">9</option>
-                    <option value="10">10</option>
-                    <option value="11">11</option>
-                    <option value="12">12</option>
-                    <option value="13">13</option>
-                    <option value="14">14</option>
-                    <option value="15">15</option>
-                    <option value="16">16</option>
-                    <option value="17">17</option>
-                    <option value="18">18</option>
-                    <option value="19">19</option>
-                    <option value="20">20</option>
-                    <option value="21">21</option>
-                    <option value="22">22</option>
-                    <option value="23">23</option>
-                    <option value="24">24</option>
-                    <option value="25">25</option>
-                    <option value="26">26</option>
-                    <option value="27">27</option>
-                    <option value="28">28</option>
-                    <option value="29">29</option>
-                    <option value="30">30</option>
-                    <option value="31">31</option>
-                    </select>
-	                <input type="text" name="year" placeholder="Year"><br>
+                <div id="contact_form">
+                    <form action="result.php" method="post">
 
-                    <label for="tours[]">Which tours interest you?</label>
-                    <select name="tours">
-                        <option> Pick a tour </option>
-                        <option value="Paris">Paris, France</option>
-                        <option value="Rome">Rome, Italy</option>
-                        <option value="Greece">Athens, Greece</option>
-                        <option value="Agra">Taj Mahal</option>
-                        <option value="Kyoto">Kyoto, Japan</option>
-                        <option value="All">All of the above!</option>
-                        <option value="Other">Other (describe below)</option>
-                    </select><br>
-                    
-                    <label for="comments">Is there any other travel info we can provide you?</label>
-                    <textarea name="comments" id="comments" cols="40" rows="5"></textarea>
-                    
-                    <input type="submit" value="Click to Send!">
-                </form>
+                        <label for="name">Your name</label>
+                        <input type="text" name="name" class="contact_class_input" required><br>
+
+                        <label for="email">Your Email</label>
+                        <input type="text" name="email" size="20" class="contact_class_input" required><br>
+
+                        <label for="date">Around what date do you want to take the trip? </label>
+                        <div id="contact_mobile_select">
+                        <select name="month" class="contact_class_date">
+                            <option> - Month - </option>
+                            <option value="January">January</option>
+                            <option value="Febuary">Febuary</option>
+                            <option value="March">March</option>
+                            <option value="April">April</option>
+                            <option value="May">May</option>
+                            <option value="June">June</option>
+                            <option value="July">July</option>
+                            <option value="August">August</option>
+                            <option value="September">September</option>
+                            <option value="October">October</option>
+                            <option value="November">November</option>
+                            <option value="December">December</option>
+                        </select>
+                        <select name="day" class="contact_class_date">
+                            <option> - Day - </option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                            <option value="13">13</option>
+                            <option value="14">14</option>
+                            <option value="15">15</option>
+                            <option value="16">16</option>
+                            <option value="17">17</option>
+                            <option value="18">18</option>
+                            <option value="19">19</option>
+                            <option value="20">20</option>
+                            <option value="21">21</option>
+                            <option value="22">22</option>
+                            <option value="23">23</option>
+                            <option value="24">24</option>
+                            <option value="25">25</option>
+                            <option value="26">26</option>
+                            <option value="27">27</option>
+                            <option value="28">28</option>
+                            <option value="29">29</option>
+                            <option value="30">30</option>
+                            <option value="31">31</option>
+                        </select>
+                        <input type="text" name="year" placeholder="Year" class="contact_class_date"><br>
+                        </div>
+                        <label for="tours[]">Which tours interest you?</label>
+                        <select name="tours[]" multiple="multiple" class="contact_class_select">
+                            <option value="Paris">Paris, France</option>
+                            <option value="Rome">Rome, Italy</option>
+                            <option value="Greece">Athens, Greece</option>
+                            <option value="Agra">Taj Mahal</option>
+                            <option value="Kyoto">Kyoto, Japan</option>
+                            <option value="All">All of the above!</option>
+                            <option value="Other">Other (describe below)</option>
+                        </select><br>
+                        
+                        <label for="comments">Is there any other travel info we can provide you?</label>
+                        <textarea name="comments" id="comments" cols="22" rows="5"></textarea>
+
+                        <input type="submit" value="Click to Send!">
+                    </form>
+                </div>
             </div> 
         </div>
         <footer>

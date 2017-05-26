@@ -85,12 +85,92 @@ footer {
 	list-style-image: url(../images/compass-bullet.png);
     margin 10px 0px 140px 0px;
 }
+#about ul {
+    width:60%;
+    margin:auto;
+}
 /* Mobile CSS */
 @media only screen and (max-width: 480px) {
+     /* Main CSS */
     #about p, hr, li, ul {
-        width:auto;
         margin:0px;
         padding:0px;
+    }
+    #main_content_left {
+        width:80%;
+        float:none;
+        margin:auto 25px auto auto;
+    }
+    
+    /* Currency Converter CSS */
+    
+    #content_right_currency {
+        text-align: center;
+        width:90%;
+        height:auto;
+        margin:10px auto;
+        border: 3px solid #cccccc
+    }
+    #currency_form {
+        
+        padding:5px;
+        background-color:white;
+        background-image: url(../images/nifty-map.png);
+        border: 1px solid;
+        border-radius: 15px;
+        color:#482D3C;
+    }
+    #currency_form_inner {
+        width:100%;
+        margin:auto;
+    }
+    #currency_form label {
+        display: inline-block;
+        width:175px;
+        margin:10px 0px 10px 0px;
+        font-weight: bold;
+    }
+    #currency_form input {
+        width:241px;
+    }
+    #currency_button {
+        display:block;
+        margin-top:10px;
+    }
+    
+    /* Secondary Content */
+    
+    #secondary_content {
+        width:100%;
+    }
+    #content_left {
+        float:none;
+    }
+    #content_left p {
+        text-align: center;
+    }
+    #content_right { 
+        float:none;
+    }
+    #content_right p {
+        text-align: center;
+    }
+    
+    /* Nav CSS */
+    
+    header img {
+        display:none;
+    }
+    nav {
+        width:100%;
+        margin:0px auto;
+        float:none;
+    }
+    #header_contact {
+        display:none;
+    }
+    #navigation {
+        width:auto;
     }
     .topnav a:not(:first-child) {
      display: none;
@@ -110,17 +190,6 @@ footer {
     .topnav a:visited, a:link {
         color:#482D3C;
     }
-    #navigation {
-        width:auto;
-    }
-    header img {
-        display:none;
-    }
-    nav {
-        width:100%;
-        margin:0px auto;
-        float:none;
-    }
     .topnav.responsive {
         position: relative;
     }
@@ -134,49 +203,121 @@ footer {
         display: block;
         text-align: left;
     } 
-    #main_content_left {
-        width:80%;
-        float:none;
-        margin:auto 25px auto auto;
+    
+    /* Slideshow CSS */
+    
+    #slideshow_wrapper img {
+        display:block;
+        margin:auto;
+        width:100%;
     }
     #slideshow_wrapper {
         width:80%;
         margin:20px 25px auto auto;
         float:none;   
     }
-    #secondary_content {
-        width:100%;
-    }
-    #content_left {
-        float:none;
-    }
-    #content_left p {
+    
+    /* Contact Form CSS */
+    
+    #contact_form label {
+        display: block;
         text-align: center;
     }
-    #content_right { 
-        float:none;
+    #contact_mobile_select {
+        display: block;
+        width:80%;
+        margin:0px auto 5px auto;
     }
-    #content_right p {
+    .contact_class_input {
+        display: block;
+        width:80%;
+        margin:5px auto;
+    }
+    .contact_class_select {
+        display: block;
+        width:80%;
+        margin:5px auto;
+    }
+    .contact_class_date {
+        width:auto;
+        margin:10px auto;
+    }
+    .contact_class_option {
         text-align: center;
     }
-    #header_contact {
-        display:none;
+    
+    input[name=year] {
+        text-align: center;
+        width:50px;
     }
-    #mobile_view {
-        display: none;
+    input[type=submit] {
+        display:block;
+        margin:5px auto;
+    }
+    textarea[name=comments] {
+        display: block;
+        width:80%;
+        margin:10px auto;
+    }
+    
+}
+/* Tablet CSS */
+@media only screen and (min-width: 481px) and (max-width: 1024px) {
+    
+    /* Main CSS */
+    
+    #about p, hr, li, ul {
+        width:auto;
+        margin:0px;
+        padding:0px;
+    }
+    #main_content_left {
+        width:80%;
+        float:none;
+        margin:auto 80px auto auto;
+    }
+    
+    /* Slideshow CSS */
+    
+    #slideshow_wrapper {
+        width:80%;
+        margin:20px 80px auto auto;
+        float:none;
     }
     #slideshow_wrapper img {
         display:block;
         margin:auto;
         width:100%;
     }
-}
-/* Tablet CSS */
-@media only screen and (min-width: 481px) and (max-width: 1024px) {
-    #about p, hr, li, ul {
-        width:auto;
-        margin:0px;
-        padding:0px;
+    
+    /* Secondary Content */
+    
+    #secondary_content {
+        width:100%;
+    }
+    #content_left {
+        float:left;
+        width:47.434%;
+        margin: 3px 0px 0px 3px;
+        padding:5px;
+        font-size: 1.2em;
+    }
+    #content_left_contact {
+        text-align: center;
+        font-size: 1em;
+    }
+    #content_right {
+        float:right;
+        width:47.434%;
+        margin:3px 3px 0px 0px; 
+        padding:5px;
+        font-size: 1.2em;
+    }
+    
+    /* Nav CSS */
+    
+    #header_contact {
+        display:none;
     }
     .topnav a:not(:first-child) {
         display: none;
@@ -220,54 +361,89 @@ footer {
         display: block;
         text-align: left;
     } 
-    #main_content_left {
+    /* Contact Form CSS */
+    
+    #contact_form label {
+        display: block;
+        text-align: center;
+    }
+    #contact_mobile_select {
+        display: block;
         width:80%;
-        float:none;
-        margin:auto 80px auto auto;
-    }
-    #slideshow_wrapper {
-        width:80%;
-        margin:20px 80px auto auto;
-        float:none;
-    }
-    #secondary_content {
-        width:100%;
-    }
-    #content_left {
-        float:none;
-    }
-    #content_right {
-        float:none;
-    }
-    #header_contact {
-        display:none;
-    }
-    #mobile_view {
-        display: none;
-    }
-    #slideshow_wrapper img {
-        display:block;
         margin:auto;
+    }
+    .contact_class_input {
+        display: block;
+        width:80%;
+        margin:5px auto;
+    }
+    .contact_class_select {
+        display: block;
+        width:80%;
+        margin:5px auto;
+    }
+    .contact_class_date {
+        width:30%;
+        margin:5px auto;
+    }
+    .contact_class_option {
+        text-align: center;
+    }
+    
+    input[name=year] {
+        text-align: center;
+    }
+    input[type=submit] {
+        display:block;
+        margin:5px auto;
+    }
+    textarea[name=comments] {
+        display: block;
+        width:80%;
+        margin:auto;
+    }
+    
+    /* Currency Converter CSS */
+    
+    #content_right_currency {
+        text-align: center;
+        width:90%;
+        height:auto;
+        margin:10px auto;
+        border: 3px solid #cccccc
+    }
+    #currency_form {
+        
+        padding:5px;
+        background-color:white;
+        background-image: url(../images/nifty-map.png);
+        border: 1px solid;
+        border-radius: 15px;
+        color:#482D3C;
+    }
+    #currency_form_inner {
         width:100%;
+        margin:auto;
     }
-    #content_left {
-        float:left;
-        width:47.434%;
-        margin: 3px 0px 0px 3px;
-        padding:5px;
-        font-size: 1.2em;
+    #currency_form label {
+        display: inline-block;
+        width:175px;
+        margin:10px 0px 10px 0px;
+        font-weight: bold;
     }
-    #content_right {
-        float:right;
-        width:47.434%;
-        margin:3px 3px 0px 0px; 
-        padding:5px;
-        font-size: 1.2em;
+    #currency_form input {
+        width:241px;
+    }
+    #currency_button {
+        display:block;
+        margin-top:10px;
     }
 
 }
 /* Desktop CSS */
 @media only screen and (min-width: 1025px) {
+    /* Main CSS */
+    
     body {
         overflow-x: hidden;
         margin: 0px;
@@ -278,6 +454,109 @@ footer {
         margin:auto;
         display:inline-block;
     }
+
+    #main_content_left {
+        color:#482D3C;
+        width:40%;
+        float:left;
+        padding:10px;
+        margin-left:40px;
+        font-size: 1.2em;
+    }
+    
+    /* Slideshow Content */
+
+    #slideshow_wrapper img {
+        display:block;
+        margin:auto;
+        width:100%;  
+    }
+
+    #slideshow_wrapper {
+        width:50%;
+        margin:10px 10px 0px 0px;
+        float:right;
+        
+    }
+    
+    /* Secondary Content */
+
+    #content_left {
+        float:left;
+        width:47.434%;
+        margin: 3px 0px 0px 3px;
+        padding:5px;
+        font-size: 1.2em;
+    }
+    
+    #content_left_contact {
+        text-align: center;
+        font-size: 1em;
+    }
+
+    #content_right {
+        float:right;
+        width:47.434%;
+        margin:3px 0px 0px 0px; 
+        padding:5px;
+        font-size: 1.2em;
+    }
+    
+    /* Contact Form CSS */
+    
+    #contact_form label {
+        display: inline-block;
+        width:250px;
+        margin:0px 30px 20px 0px;
+    }
+    input[name=year] {
+        width:30px;
+        text-align: center;
+    }
+    input[type=submit] {
+        display:block;
+        margin:auto;
+    }
+    #contact_mobile_select {
+        display:inline;
+    }
+    
+    /* Currency Converter CSS */
+    
+    #content_right_currency {
+        text-align: center;
+        width:100%;
+        height:auto;
+        margin:15px auto;
+        border: 3px solid #cccccc
+    }
+    #currency_form {
+        
+        padding:15px;
+        background-color:white;
+        background-image: url(../images/nifty-map.png);
+        border: 1px solid;
+        border-radius: 15px;
+        color:#482D3C;
+    }
+    #currency_form_inner {
+        width:80%;
+        margin:auto;
+    }
+    #currency_form label {
+        display: inline-block;
+        width:175px;
+        margin-bottom:5px;
+    }
+    #currency_form input {
+        width:240px;
+    }
+    #currency_button {
+        display:block;
+        margin:auto;
+    }
+    
+    /* Nav CSS */
     
     header {
         width:90%;
@@ -295,64 +574,6 @@ footer {
         float:left;
         width:17%;
         margin:auto;
-    }
-
-    #main_content_left {
-        color:#482D3C;
-        width:40%;
-        float:left;
-        padding:10px;
-        margin-left:40px;
-        font-size: 1.2em;
-    }
-
-    #slideshow_wrapper img {
-        display:block;
-        margin:auto;
-        width:100%;  
-    }
-
-    #slideshow_wrapper {
-        width:50%;
-        margin:10px 10px 0px 0px;
-        float:right;
-        
-    }
-
-    #content_left {
-        float:left;
-        width:47.434%;
-        margin: 3px 0px 0px 3px;
-        padding:5px;
-        font-size: 1.2em;
-    }
-
-    #content_right {
-        float:right;
-        width:47.434%;
-        margin:3px 0px 0px 0px; 
-        padding:5px;
-        font-size: 1.2em;
-    }
-    #content_right label {
-        display: inline-block;
-        width:175px;
-        margin:0px 30px 20px 0px;
-    }
-    input[name=year] {
-        width:30px;
-        text-align: center;
-    }
-    input[type=submit] {
-        display:block;
-        margin:auto;
-    }
-    #content_right form {
-        margin-left:30px;
-    }
-    #content_left p {
-        text-align: center;
-        font-size: 1em;
     }
     
     #header_contact {
@@ -378,7 +599,7 @@ footer {
     #header_contact p {
         padding: 14px 16px;
     }
-
+    
     .dropdown {
         float: left;
         overflow: hidden;

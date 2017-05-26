@@ -4,19 +4,35 @@
     $month = $_POST['month'];
     $day = $_POST['day'];
     $year = $_POST['year'];
-    $tours = $_POST['tours'];
     $message = $_POST['comments'];
-    
-   /* 
+
+    $tours = $_POST['tours'];
+
+    $numTours = count($tours);
+    $i = 0;
+    $total_tours = "";
+    foreach($_POST['tours'] as $tours) {
+        $total_tours .= $tours;
+        if(++$i !== $numTours) {
+            $total_tours .= ", ";  
+        } elseif($i === $numTours) {
+            $total_tours .= ". ";
+        }   
+    }
+   
     $email_from = 'contact@christiancoogan.com';
     $email_subject = "New Form Submission";
-    $email_body = "You have recieved a new message from the user " . $name . ".\n" . "Here is the message: \n" . $message; 
+
+    $email_body = "You have recieved a new message from the user " . $name . ".\n";
+    $email_body .= "The dates they submitted were: " . $month . " " . $day . suffix($day) . ", " . $year . ".\n";
+    $email_body .= "The tours they are interested in are: " . $total_tours . "\n";
+    $email_body .= "Here is the message: \n" . $message;
 
     $to = "contact@christiancoogan.com";
     $headers = "From: " . $email_from . "\r\n";
     $headers .= "Reply-To: " . $email . "\r\n";
     mail($to, $email_subject, $email_body, $headers);
-    */
+    
     
     function suffix($day){
         $day = $day % 100;
@@ -90,19 +106,22 @@
     <div id="secondary_content">
         <div id="content_wrapper">
             <div id="content_left">
-                <h1>NIFTY TOURS</h1>
-                <p>
-                    12000 Southwest 49th Avenue<br>
-                    Portland, Oregon 97219<br>
-                    (503) 555-1212
-                </p>
+                <div id="content_left_contact">
+                    <h1>NIFTY TOURS</h1>
+                    <p>
+                        12000 Southwest 49th Avenue<br>
+                        Portland, Oregon 97219<br><br>
+                        (503) 555-1212<br><br>
+                        <img src="images/nifty-contact.png">
+                    </p>
+                </div>
             </div>
             <div id="content_right">
                 <h1>Thank you for your interest!</h1>
-                <p>Thank you for your interest in the <?php echo $tours ?> tour <?php echo $name; ?>.</p>
+                <p>Thank you for your interest in Nifty Tours <?php echo $name; ?>. You selected the following tours: <?php echo $total_tours; ?></p>
                 <p>The date you selected was <?php echo $month . " " . $day . suffix($day) . ", " . $year; ?>.</p>
                 <p>Your message was <?php echo $message ?></p>
-                <p>We will email you back at <?php echo '"' . $email . '"'; ?> as soon as we are able.</p>
+                <p>We will email you back at <?php echo '"' . $email . '"'; ?> as soon as we can!</p>
             </div> 
         </div>
         <footer>

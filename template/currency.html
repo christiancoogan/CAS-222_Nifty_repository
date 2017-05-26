@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" />
+    <title>Nifty Tours Template</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link href="css/reset.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <script src="navigation.js"></script>
+    <script src="currency.js"></script>
+    <script src="money.js"></script>
+    <script src="accounting.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="topnav" id="myTopnav">
+                <a href="#home">Welcome</a>
+                <a href="#news">News</a>
+                <a href="#guides">Services</a>
+                <a href="#about">About</a>
+                <a href="contact.html">Contact us!</a> 
+                <a href="javascript:void(0);" class="icon" onclick="responsiveNav()">&#9776;</a>
+        </nav>  
+        <img src="images/nifty-tours-logo.png">
+        <div id="header_contact">
+            <div class="dropdown">
+                <button class="dropbtn" onclick="myFunction()">Translators</button>
+                <div class="dropdown-content" id="myDropdown">
+                    <a href="#">French</a>
+                    <a href="#">Chinese</a>
+                    <a href="#">Spanish</a>
+                </div>
+            </div>
+            <a href="#contact">Come with us!</a>
+            <p>503-555-1212</p>
+        </div>
+    </header>
+    <main>
+        <div id="main_content_left">
+            <h1>Main Content 1</h1>
+            Proin id tempor urna. Sed vel nulla hendrerit, sodales lorem vitae, consectetur sem. Phasellus id risus metus. Cras efficitur massa luctus interdum elementum. Quisque et feugiat risus. Integer et justo consequat purus dapibus convallis. Aliquam volutpat at dui id ullamcorper. Duis vulputate, nunc eget viverra gravida, nisi nunc fringilla turpis, eget dapibus ipsum nunc a quam. Nulla luctus risus vitae nunc tincidunt euismod. Nunc magna dui, gravida bibendum ante sit amet, bibendum placerat tellus. Curabitur facilisis, erat nec dignissim eleifend, nunc augue condimentum leo, vestibulum tincidunt mauris ante pulvinar mauris.
+        </div>
+        <div id="slideshow_wrapper">
+            <img src="images/best.png">
+        </div>
+    </main>
+    <div id="secondary_content">
+        <div id="content_wrapper">
+            <div id="content_left">
+                <h1>Content 1</h1>
+                Proin id tempor urna. Sed vel nulla hendrerit, sodales lorem vitae, consectetur sem. Phasellus id risus metus. Cras efficitur massa luctus interdum elementum. Quisque et feugiat risus. Integer et justo consequat purus dapibus convallis. Aliquam volutpat at dui id ullamcorper. Duis vulputate, nunc eget viverra gravida, nisi nunc fringilla turpis, eget dapibus ipsum nunc a quam. Nulla luctus risus vitae nunc tincidunt euismod. Nunc magna dui, gravida bibendum ante sit amet, bibendum placerat tellus. Curabitur facilisis, erat nec dignissim eleifend, nunc augue condimentum leo, vestibulum tincidunt mauris ante pulvinar mauris.
+            </div>
+            <div id="content_right">
+                <h1>Content 2</h1>
+                <div id="currency_form">
+                    <div id="currency_form_inner">
+                        <label for="currency-type1">First Currency</label>
+                        <select name="currency-type1" id="currency-type1" class="currency_form_select">
+                            <option> - First Currency - </option>  
+                        </select><br>
+
+                        <label for="currency-num1">Number to Convert</label>
+                        <input type="text" name ="currency-num1" size="20" id="currency-num1" required><br>
+
+                        <label for="currency-type2">Second Currency</label>
+                        <select name="currency-type2" id="currency-type2" class="currency_form_select">
+                            <option> - Second Currency - </option>   
+                        </select><br>
+
+                        <button id="currency_button" onclick="submit()">Convert!</button>
+                        <textarea id="content_right_currency"></textarea>
+                    </div>
+                </div>  
+            </div>  
+        </div>
+        <footer>
+            <img src="images/facebook-logo.png">
+            <img src="images/twitter-logo.png">
+        </footer>
+    </div>  
+</body>
+</html>
